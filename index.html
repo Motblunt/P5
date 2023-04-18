@@ -26,7 +26,7 @@
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              ><img src="assets/images/instagram.png" alt=""
+              ><img src="assets/images/instagram.png" alt="logo instagram"
             /></a>
           </li>
         </ul>
@@ -63,7 +63,15 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg"
+              sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)"
+              srcset="
+                assets\images\slider\ultra.jpg   2047w,
+                assets\images\slider\1920px.jpg  1920w,
+                assets\images\slider\1580px.jpg  1580w,
+                assets\images\slider\desktop.jpg 1139w,
+                assets\images\slider\mobile.jpg   300w
+              "
+              src="assets\images\slider\ryoji-iwata-wUZjnOv7t0g-unsplash.jpg"
               class="d-block w-100"
               alt="photo Ryoji Iwata"
             />
@@ -105,7 +113,17 @@
     </div>
     <div id="about">
       <div class="picture left">
-        <img src="./assets/images/nina.jpg" alt="Photo Nina Carducci" />
+        <img
+          src="./assets/images/nina.jpg"
+          alt="Photo Nina Carducci"
+          srcset="
+            assets\images\nina256.jpg    256w,
+            assets\images\nina560.jpg    560w,
+            assets\images\nina890px.jpg  890w,
+            assets\images\nina1120.jpg  1120w
+          "
+          sizes="(min-width: 2020px) 560px, (min-width: 1200px) calc(30vw - 40px), (min-width: 660px) calc(46.15vw - 75px), calc(80vw - 51px)"
+        />
       </div>
       <div id="about-me">
         <h3 class="about-me__title">A propos de moi</h3>
